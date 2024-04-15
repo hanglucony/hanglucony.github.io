@@ -21,7 +21,7 @@ social: true # includes social icons at the bottom of the page
 ---
 
 Hi, this is Hang, a EE PhD student at King Abdullah University of Science and Technology (KAUST), in [Photonics Laboratory](https://cemse.kaust.edu.sa/photonics) research group, supervised under Prof.
-[Boon Ooi](https://cemse.kaust.edu.sa/ece/people/person/boon-ooi').
+[Boon Ooi](https://cemse.kaust.edu.sa/ece/people/person/boon-ooi).
 
 Before starting my PhD, I got a bachelor's degree at **University of Electronic Science and Technology of China**,
 and my M.S degree in Statistics at KAUST.
