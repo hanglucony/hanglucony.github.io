@@ -128,3 +128,9 @@
   </div>
   {% include scripts/wechatModal.liquid %}
 {% endif %}
+{% if site.xiaohongshu_id %}
+  <a href="https://www.xiaohongshu.com/user/profile/{{ site.xiaohongshu_id }}" title="Xiaohongshu"><i class="fa-solid fa-book-open"></i></a>
+{% endif %}
+{% if site.weibo_id %}
+  <a href="https://weibo.com/u/{{ site.weibo_id }}" title="Weibo"><i class="fa-brands fa-weibo"></i></a>
+{% endif %}

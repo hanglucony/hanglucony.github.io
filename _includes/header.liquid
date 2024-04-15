@@ -56,8 +56,29 @@
             </a>
           </li>
 
+{% comment %} more to add.. {% endcomment %}
+{% comment %}
+publications
+projects
+repositories
+cv
+teaching
+people {% endcomment %}
+
           <!-- Other pages -->
-          {% assign sorted_pages = site.pages | sort: 'nav_order' %}
+          {% assign show_navs = site.show_navs | default: 'blog, news, publications, cv' | split: ', ' %}
+          {% for p in show_navs %}
+            <p class="nav-item {% if page.permalink contains p %}active{% endif %}">
+              <a class="nav-link" href="{{ site.baseurl }}/{{ p }}">
+                {{- p }}
+                {% if page.permalink contains p %}
+                  <span class="sr-only">(current)</span>
+                {% endif %}
+              </a>
+            </p>
+          {% endfor %}
+
+          {% comment %} {% assign sorted_pages = site.pages | sort: 'nav_order' %}
           {% for p in sorted_pages %}
             {% if p.nav and p.autogen == null %}
               {% if p.dropdown %}
@@ -106,7 +127,8 @@
                 </li>
               {% endif %}
             {% endif %}
-          {% endfor %}
+          {% endfor %} {% endcomment %}
+
           {% if site.enable_darkmode %}
             <!-- Toogle theme mode -->
             <li class="toggle-container">
